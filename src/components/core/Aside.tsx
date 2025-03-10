@@ -6,19 +6,19 @@ import Socials from "@/components/core/Socials";
 const Aside = async () => {
   const t = await getTranslations("Aside");
   return (
-    <aside
-      className={
-        "vertical-padding flex flex-col h-min justify-between gap-y-12 lg:fixed"
-      }
-    >
-      <header className={"flex flex-col gap-y-5"}>
-        <h1>{t("name")}</h1>
-        <h2>{t("position")}</h2>
-        <p className={"max-w-96"}>{t("quote")}</p>
-        <Socials />
-      </header>
+    <aside className={"vertical-padding min-w-96 w-full"}>
+      <section
+        className={"lg:fixed  flex flex-col h-min justify-between gap-y-12"}
+      >
+        <header className={"flex flex-col gap-y-5"}>
+          <h1>{t("name")}</h1>
+          <h2>{t("position")}</h2>
+          <p className={"max-w-96"}>{t("quote")}</p>
+          <Socials />
+        </header>
 
-      <Navbar />
+        <Navbar />
+      </section>
     </aside>
   );
 };

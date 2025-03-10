@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Geist';
-    src: url("/fonts/Geist.ttf");
+    src: url("/public/fonts/Geist.ttf") format("truetype");
 }
 
 @layer utilities {
@@ -86,6 +86,13 @@ h3 {
     @apply uppercase
 }
 
+h4 {
+    color: var(--accent-7);
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    font-weight: 300;
+}
+
 p {
     color: var(--accent-7);
     font-size: 16px;
@@ -120,7 +127,7 @@ p {
 
 @media (min-width: 1024px) {  /* lg breakpoint */
     .container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto 1fr;
         max-width: 1200px;
         padding: 0 52px;
         column-gap: 48px;

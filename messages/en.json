@@ -12,7 +12,27 @@
     },
     "Experience": {
       "title": "Experience",
-      "href": "experience"
+      "href": "experience",
+      "tabs": [
+        {
+          "title":"Front-end Developer • Yolk Studio",
+          "dateSpan": "February – March 2025",
+          "description": "Implemented server-side and client-side frontend solutions, created multilingual landing pages.",
+          "skills": ["NextJS", "React.js", "TypeScript", "TailwindCSS", "Asana"]
+        },
+        {
+          "title":"Web-app developer • eppTec",
+          "dateSpan": "September 2024 – February 2025",
+          "description": "Designed and developed frontend solutions for banking processes at Česká spořitelna. Using TypeScript, I translated complex requirements into functional and scalable systems.",
+          "skills": ["TypeScript", "Analytical thinking", "Bank processes"]
+        },
+        {
+          "title":"Front-end Developer • ka.soft",
+          "dateSpan": "June – September 2024",
+          "description": "Designed and developed custom web applications, creating intuitive UX/UI designs, writing responsive, performance-optimized frontend code. Managed the full development lifecycle to deliver scalable, user-focused solutions on time.",
+          "skills": ["React.js", "TypeScript", "TailwindCSS", "Vite"]
+        }
+      ]
     },
     "Projects": {
       "title": "Projects",

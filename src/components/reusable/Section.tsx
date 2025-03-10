@@ -5,7 +5,7 @@ type TSection = { id: string };
 
 const Section = ({ id, children }: TSection & Props.Children) => {
   return (
-    <section id={id} className={"flex flex-col pt-24"}>
+    <section id={id} className={"flex flex-col pt-24 gap-y-4"}>
       {children}
     </section>
   );
