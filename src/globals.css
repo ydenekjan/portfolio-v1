@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Geist';
+    src: url("/fonts/Geist.ttf");
+}
+
+@layer utilities {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: auto;
+        row-gap: 128px;
+        column-gap: 64px;
+    }
+
+    .vertical-padding {
+        padding: 2rem 0;
+    }
+
+    .social-icon {
+        fill: var(--accent-7);
+    }
+
+    .nav-item {
+        color: var(--accent-5);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        padding: 2px 8px 2px 0;
+        font-size: 12px;
+        letter-spacing: 0.15em;
+        font-weight: 700;
+        &:hover {
+            color: var(--accent-8);
+            &::before {
+                width: 3rem;
+                background-color: var(--accent-8);
+            }
+        }
+        &.active {
+            color: var(--accent-8);
+            &::before {
+                width: 3rem;
+                background-color: var(--accent-8);
+            }
+        }
+        &::before {
+            content: '';
+            display: inline-block;
+            margin-right: 1rem;
+            width: 2rem;
+            height: 1px;
+            background-color: var(--accent-5);
+            @apply transition-all
+        }
+        @apply transition-all uppercase
+    }
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 0.8;
+    font-weight: 600;
+    color: var(--accent-9);
+}
+
+h2 {
+    color: var(--accent-8);
+    font-size: 20px;
+    line-height: 0.8;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+}
+
+h3 {
+    color: var(--accent-6);
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    @apply uppercase
+}
+
+p {
+    color: var(--accent-7);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+}
+
+@media (min-width: 640px) {  /* sm breakpoint */
+    .container {
+        padding: 0 24px;
+    }
+
+    .vertical-padding {
+        padding: 36px 0;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 768px) {  /* md breakpoint */
+    .container {
+        padding: 0 52px;
+    }
+
+    .vertical-padding {
+        padding: 52px 0;
+    }
+}
+
+@media (min-width: 1024px) {  /* lg breakpoint */
+    .container {
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px;
+        padding: 0 52px;
+        column-gap: 48px;
+    }
+
+    .vertical-padding {
+        padding: 98px 0;
+    }
+}
+
+:root {
+    font-family: Geist, sans-serif;
+    background-color: var(--accent-1);
+    scroll-behavior: smooth;
+
+    /*colors*/
+    --accent-1: #fafafa;
+    --accent-2: #eaeaea;
+    --accent-3: #999999;
+    --accent-4: #888888;
+    --accent-5: #666666;
+    --accent-6: #444444;
+    --accent-7: #333333;
+    --accent-8: #222222;
+    --accent-9: #111111;
+}
+
+:root[class~='dark'] {
+    --accent-9: #fafafa;
+    --accent-8: #eaeaea;
+    --accent-7: #999999;
+    --accent-6: #888888;
+    --accent-5: #666666;
+    --accent-4: #444444;
+    --accent-3: #333333;
+    --accent-2: #222222;
+    --accent-1: #111111;
+}
+
+@theme inline {
+    --color-accent-1: var(--accent-1);
+    --color-accent-2: var(--accent-2);
+    --color-accent-3: var(--accent-3);
+    --color-accent-4: var(--accent-4);
+    --color-accent-5: var(--accent-5);
+    --color-accent-6: var(--accent-6);
+    --color-accent-7: var(--accent-7);
+    --color-accent-8: var(--accent-8);
+}

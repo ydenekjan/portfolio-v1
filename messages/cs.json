@@ -1,0 +1,24 @@
+{
+  "Aside": {
+    "name": "Jan Zdeněk",
+    "position": "Frontend vývojář",
+    "quote": "Vytvářím přístupná, na pixel přesná frontendová řešení pro web a webové aplikace."
+  },
+  "Main": {
+    "About": {
+      "title": "O mně",
+      "content": "Jsem ambiciózní frontendový vývojář s citem pro detail, silnými analytickými schopnostmi a zkušenostmi s vedením týmu. Jsem kariérně orientovaný a zaměřený na výsledky, s velkou vášní pro skutečný dopad a využití mé práce.<br></br>V minulosti jsem měl možnost vyvíjet software napříč širokou škálou prostředí – od firem poskytujících webové aplikace a stránky na míru po velké korporáty vuyžívající proprietárních frameworků.<br></br>Pokud nejsem v práci, jsem ve škole: škola tvoří druhou podstatnou část mého života. Jako student Unicorn University jsem zatím uspěl v předmětech jako například Architektura cloudových aplikací, Frontendové a backendové systémy nebo Matematická analýza a Diskrétní matematika.<br></br>Ve svém volném čase se věnuji rozvíjení svých frontendových a backendových schopností, hudbě a hraní videoher.",
+      "href": "o-mne"
+    },
+    "Experience": {
+      "title": "Zkušenosti",
+      "content": "",
+      "href": "zkusenosti"
+    },
+    "Projects": {
+      "title": "Projekty",
+      "content": "",
+      "href": "projekty"
+    }
+  }
+}
