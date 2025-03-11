@@ -7,7 +7,7 @@ import TypewriterInfo from "@/components/core/TypewriterInfo";
 const Aside = async () => {
   const t = await getTranslations("Aside");
   return (
-    <aside className={"vertical-padding min-w-96 w-full"}>
+    <aside className={"vertical-padding md:min-w-96 w-full"}>
       <section
         className={"lg:fixed  flex flex-col h-min justify-between gap-y-12"}
       >

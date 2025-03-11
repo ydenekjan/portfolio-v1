@@ -26,7 +26,7 @@ const SectionTitle = ({ children }: Props.Children) => {
   return (
     <h3
       className={
-        "lg:hidden max-lg:sticky -top-8 w-full bg-accent-1/80 backdrop-blur-xs py-4 translate-y-8"
+        "lg:hidden max-lg:sticky -top-8 w-full bg-accent-1/80 backdrop-blur-xs py-4 translate-y-8 z-50"
       }
     >
       {children}
