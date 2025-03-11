@@ -68,9 +68,9 @@ const Main = () => {
             ),
           )}
       </Section>
-      {/*<Section ref={projectsRef} id={t("Projects.href")}>*/}
-      {/*  <Section.Title>{t("Projects.title")}</Section.Title>*/}
-      {/*</Section>*/}
+      <Section className={"hidden"} ref={projectsRef} id={t("Projects.href")}>
+        <Section.Title>{t("Projects.title")}</Section.Title>
+      </Section>
     </main>
   );
 };

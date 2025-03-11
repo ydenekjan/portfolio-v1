@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import "@/globals.css";
 import Providers from "@/components/providers/Providers";
 import React from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default async function LocaleLayout({
   children,
@@ -22,6 +23,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <SpeedInsights />
       <body className={"flex flex-col items-center"}>
         <NextIntlClientProvider messages={messages}>
           <Providers>{children}</Providers>
