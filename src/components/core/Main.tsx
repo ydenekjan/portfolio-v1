@@ -83,12 +83,7 @@ const Main = () => {
               />
             ),
           )}
-        <a
-          target="_blank"
-          className={"max-md:hidden"}
-          href={t("Experience.link.href")}
-          rel="noopener noreferrer"
-        >
+        <a className={"max-md:hidden"} href={t("Experience.link.href")}>
           <h3
             className={
               "w-fit text-[14px]! font-medium! hover:text-accent-8! transition-colors text-accent-6 relative after:content-['_↗'] gap-2 items-center flex after:translate-y-[1px]"
