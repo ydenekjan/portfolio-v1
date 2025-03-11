@@ -53,7 +53,6 @@ const Main = () => {
         <Section.Title>
           {t("Experience.title")}
           <a
-            className={"max-md:hidden"}
             href={t("Experience.link.href")}
             target="_blank"
             rel="noopener noreferrer"
@@ -84,7 +83,7 @@ const Main = () => {
             ),
           )}
         <a
-          className={"max-md:hidden"}
+          className={"max-lg:hidden"}
           href={t("Experience.link.href")}
           target="_blank"
           rel="noopener noreferrer"
