@@ -3,16 +3,19 @@
 import React from "react";
 import { Props } from "@/types";
 import { ThemeProvider } from "next-themes";
+import { NavContextProvider } from "@/components/context/NavContext";
 
 const Providers = ({ children }: Props.Children) => {
   return (
-    <ThemeProvider
-      attribute={"class"}
-      defaultTheme={"system"}
-      enableSystem={true}
-    >
-      {children}
-    </ThemeProvider>
+    <NavContextProvider>
+      <ThemeProvider
+        attribute={"class"}
+        defaultTheme={"dark"}
+        enableSystem={true}
+      >
+        {children}
+      </ThemeProvider>
+    </NavContextProvider>
   );
 };
 

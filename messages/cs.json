@@ -7,7 +7,7 @@
   "Main": {
     "About": {
       "title": "O mně",
-      "content": "Jsem ambiciózní frontendový vývojář s citem pro detail, silnými analytickými schopnostmi a zkušenostmi s vedením týmu. Jsem kariérně orientovaný a zaměřený na výsledky, s velkou vášní pro skutečný dopad a využití mé práce.<br></br>V minulosti jsem měl možnost vyvíjet software napříč širokou škálou prostředí – od firem poskytujících webové aplikace a stránky na míru po velké korporáty vuyžívající proprietárních frameworků.<br></br>Pokud nejsem v práci, jsem ve škole: škola tvoří druhou podstatnou část mého života. Jako student Unicorn University jsem zatím uspěl v předmětech jako například Architektura cloudových aplikací, Frontendové a backendové systémy nebo Matematická analýza a Diskrétní matematika.<br></br>Ve svém volném čase se věnuji rozvíjení svých frontendových a backendových schopností, hudbě a hraní videoher.",
+      "content": "Jsem ambiciózní frontendový vývojář s citem pro detail, silnými analytickými schopnostmi a zkušenostmi s vedením týmu. Jsem kariérně orientovaný a zaměřený na výsledky, vždy usiluji o to, aby moje práce měla skutečný dopad a byla široce využívána.<br></br>Během své kariéry jsem měl možnost vyvíjet software v různých prostředích – od společností specializujících se na vývoj webových aplikací na míru až po velké korporace využívající proprietární frameworky.<br></br>Kromě práce je pro mě klíčové také vzdělání. Jako student Unicorn University jsem úspěšně absolvoval předměty jako Architektura cloudových aplikací, Frontendové a backendové systémy či Matematická analýza a diskrétní matematika.<br></br>Ve volném čase se věnuji rozvoji svých frontendových a backendových dovedností, hudbě a hraní videoher.",
       "href": "o-mne"
     },
     "Experience": {
@@ -27,7 +27,7 @@
           "skills": ["TypeScript", "Analytické myšlení", "Bankovní procesy"]
         },
         {
-          "title":"Frontend vývojář",
+          "title":"Frontend vývojář • ka.soft",
           "dateSpan": "Červen – Září 2024 • ka.soft",
           "description": "Vedl jsem návrh a vývoj zakázkových webových aplikací s důrazem na intuitivní UX/UI, responzivní frontend a bezproblémovou integraci s backendem. Řídil jsem celý vývojový cyklus a zajišťoval včasné dodání škálovatelných a přístupných řešení dle požadavků klientů.",
           "skills": ["React.js", "TypeScript", "TailwindCSS", "Vite"]

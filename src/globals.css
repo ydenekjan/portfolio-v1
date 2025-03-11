@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Geist';
-    src: url("/public/fonts/Geist.ttf") format("truetype");
+    src: url("/fonts/Geist.ttf") format("truetype");
 }
 
 @layer utilities {
@@ -14,12 +14,39 @@
         display: grid;
         grid-template-columns: auto;
         grid-auto-rows: auto;
-        row-gap: 128px;
         column-gap: 64px;
     }
 
     .vertical-padding {
         padding: 2rem 0;
+    }
+
+    .experience-tab-border {
+        padding: 1px;
+        @apply rounded-md
+    }
+
+    .experience-tab {
+        background: var(--accent-1);
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 8px;
+        column-gap: 48px;
+        cursor: default;
+        /*overflow: hidden;*/
+        @apply transition-colors rounded-md
+    }
+
+    .bg-gradient {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.6;
     }
 
     .social-icon {
@@ -122,6 +149,11 @@ p {
 
     .vertical-padding {
         padding: 52px 0;
+    }
+
+    .experience-tab {
+        padding: 28px;
+        grid-template-columns: 1fr 2fr;
     }
 }
 

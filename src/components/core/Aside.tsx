@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/navbar/Navbar";
 import { getTranslations } from "next-intl/server";
 import Socials from "@/components/core/Socials";
+import TypewriterInfo from "@/components/core/TypewriterInfo";
 
 const Aside = async () => {
   const t = await getTranslations("Aside");
@@ -13,7 +14,7 @@ const Aside = async () => {
         <header className={"flex flex-col gap-y-5"}>
           <h1>{t("name")}</h1>
           <h2>{t("position")}</h2>
-          <p className={"max-w-96"}>{t("quote")}</p>
+          <TypewriterInfo />
           <Socials />
         </header>
 

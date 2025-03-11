@@ -3,45 +3,35 @@
 import React, { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Props } from "@/types";
+import { useNavContext } from "@/components/context/NavContext";
 
 const Navbar = ({ className }: Props.ClassName) => {
   const t = useTranslations("Main");
-  const [activeLink, setActiveLink] = useState<string | null>(null);
+
+  const [activeLink, setActiveLink] = useState("about");
+  const { aboutInView, experienceInView, projectsInView } = useNavContext();
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const currentHash = window.location.hash.replace("#", "");
-      console.log(currentHash);
-      setActiveLink(currentHash || t("About.href"));
-    }
-
-    const handleHashChange = () => {
-      setActiveLink(window.location.hash.replace("#", "") || t("About.href"));
-    };
-
-    window.addEventListener("hashchange", handleHashChange);
-
-    return () => window.removeEventListener("hashchange", handleHashChange);
-  }, []);
+    if (projectsInView) setActiveLink(t("Projects.href"));
+    if (experienceInView) setActiveLink(t("Experience.href"));
+    if (aboutInView) setActiveLink(t("About.href"));
+  }, [aboutInView, experienceInView, projectsInView]);
 
   return (
     <nav className={`max-lg:hidden flex flex-col gap-y-4 ${className}`}>
       <a
-        onClick={() => setActiveLink("about")}
         className={`nav-item ${activeLink === t("About.href") ? "active" : ""}`}
         href={`#${t("About.href")}`}
       >
         {t("About.title")}
       </a>
       <a
-        onClick={() => setActiveLink("experience")}
         className={`nav-item ${activeLink === t("Experience.href") ? "active" : ""}`}
         href={`#${t("Experience.href")}`}
       >
         {t("Experience.title")}
       </a>
       <a
-        onClick={() => setActiveLink("projects")}
         className={`nav-item ${activeLink === t("Projects.href") ? "active" : ""}`}
         href={`#${t("Projects.href")}`}
       >
