@@ -82,7 +82,7 @@ const Main = () => {
         <Link className={"max-md:hidden"} href={t("Experience.link.href")}>
           <h3
             className={
-              "w-fit text-[14px]! font-medium! hover:text-accent-8! transition-colors text-accent-6 relative after:content-['_↗'] after:absolute after:-right-2 after:top-[9px] items-center flex"
+              "w-fit text-[14px]! font-medium! hover:text-accent-8! transition-colors text-accent-6 relative after:content-['_↗'] gap-2 items-center flex after:translate-y-[1px]"
             }
           >
             <span>{t("Experience.link.title")}</span>
