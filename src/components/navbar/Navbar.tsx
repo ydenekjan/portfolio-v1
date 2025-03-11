@@ -31,12 +31,12 @@ const Navbar = ({ className }: Props.ClassName) => {
       >
         {t("Experience.title")}
       </a>
-      <a
-        className={`nav-item ${activeLink === t("Projects.href") ? "active" : ""}`}
-        href={`#${t("Projects.href")}`}
-      >
-        {t("Projects.title")}
-      </a>
+      {/*<a*/}
+      {/*  className={`nav-item ${activeLink === t("Projects.href") ? "active" : ""}`}*/}
+      {/*  href={`#${t("Projects.href")}`}*/}
+      {/*>*/}
+      {/*  {t("Projects.title")}*/}
+      {/*</a>*/}
     </nav>
   );
 };

@@ -31,7 +31,11 @@ const Main = () => {
   }, [aboutInView, experienceInView, projectsInView]);
 
   return (
-    <main className={"flex flex-col gap-y-16 scroll-smooth lg:col-start-2"}>
+    <main
+      className={
+        "flex flex-col gap-y-16 scroll-smooth lg:col-start-2 vertical-padding pt-0!"
+      }
+    >
       <Section ref={aboutRef} id={t("About.href")}>
         <Section.Title>{t("About.title")}</Section.Title>
         <p>
@@ -64,9 +68,9 @@ const Main = () => {
             ),
           )}
       </Section>
-      <Section ref={projectsRef} id={t("Projects.href")}>
-        <Section.Title>{t("Projects.title")}</Section.Title>
-      </Section>
+      {/*<Section ref={projectsRef} id={t("Projects.href")}>*/}
+      {/*  <Section.Title>{t("Projects.title")}</Section.Title>*/}
+      {/*</Section>*/}
     </main>
   );
 };

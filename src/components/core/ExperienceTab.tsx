@@ -43,10 +43,10 @@ const ExperienceTab = ({
       }
     >
       <div
-        className={`experience-tab group overflow-hidden border border-transparent hover:border-accent-2`}
+        className={`experience-tab group overflow-hidden border border-transparent md:hover:border-accent-2`}
       >
         <div
-          className="bg-gradient hidden group-hover:block transition-colors"
+          className="bg-gradient hidden md:group-hover:block transition-colors"
           style={{
             background: `radial-gradient(512px circle at ${mouseX}% ${mouseY}%, var(--accent-2), transparent`,
           }}
