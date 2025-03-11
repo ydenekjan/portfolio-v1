@@ -8,6 +8,7 @@ import React, { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 import { useNavContext } from "@/components/context/NavContext";
+import Link from "next/link";
 
 const Main = () => {
   const t = useTranslations("Main");
@@ -50,7 +51,18 @@ const Main = () => {
         </p>
       </Section>
       <Section ref={experienceRef} id={t("Experience.href")}>
-        <Section.Title>{t("Experience.title")}</Section.Title>
+        <Section.Title>
+          {t("Experience.title")}
+          <Link href={t("Experience.link.href")}>
+            <h3
+              className={
+                "w-fit text-[14px]! font-medium! hover:text-accent-8! transition-colors text-accent-6 relative after:content-['_↗'] gap-2 items-center flex after:translate-y-[1px]"
+              }
+            >
+              <span>{t("Experience.link.title")}</span>
+            </h3>
+          </Link>
+        </Section.Title>
         {t
           .raw("Experience.tabs")
           ?.map(
@@ -67,6 +79,15 @@ const Main = () => {
               />
             ),
           )}
+        <Link className={"max-md:hidden"} href={t("Experience.link.href")}>
+          <h3
+            className={
+              "w-fit text-[14px]! font-medium! hover:text-accent-8! transition-colors text-accent-6 relative after:content-['_↗'] after:absolute after:-right-2 after:top-[9px] items-center flex"
+            }
+          >
+            <span>{t("Experience.link.title")}</span>
+          </h3>
+        </Link>
       </Section>
       <Section className={"hidden"} ref={projectsRef} id={t("Projects.href")}>
         <Section.Title>{t("Projects.title")}</Section.Title>

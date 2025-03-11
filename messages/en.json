@@ -32,7 +32,11 @@
           "description": "Designed and developed custom web applications, creating intuitive UX/UI designs, writing responsive, performance-optimized frontend code. Managed the full development lifecycle to deliver scalable, user-focused solutions on time.",
           "skills": ["React.js", "TypeScript", "TailwindCSS", "Vite"]
         }
-      ]
+      ],
+      "link": {
+        "title": "Get my full Résumé",
+        "href": "/janZdenek_CV.pdf"
+      }
     },
     "Projects": {
       "title": "Projects",

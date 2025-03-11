@@ -32,7 +32,11 @@
           "description": "Vedl jsem návrh a vývoj zakázkových webových aplikací s důrazem na intuitivní UX/UI, responzivní frontend a bezproblémovou integraci s backendem. Řídil jsem celý vývojový cyklus a zajišťoval včasné dodání škálovatelných a přístupných řešení dle požadavků klientů.",
           "skills": ["React.js", "TypeScript", "TailwindCSS", "Vite"]
         }
-      ]
+      ],
+      "link": {
+        "title": "Získat životopis",
+        "href": "/janZdenek_zivotopis.pdf"
+      }
     },
     "Projects": {
       "title": "Projekty",
