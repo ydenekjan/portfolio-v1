@@ -20,21 +20,21 @@
       "tabs": [
         {
           "title":"Frontend vývojář • Yolk Studio",
-          "dateSpan": "Únor – Březen 2025",
-          "description": "Implementoval frontendová řešení na server-side i client-side, vytvářel multijazyčné vstupní stránky.",
-          "skills": ["NextJS", "React.js", "TypeScript", "TailwindCSS", "Asana"]
+          "dateSpan": "Únor – Současnost",
+          "description": "Vytvářel responzivní weby s úchvatnými 3D animacemi, vícejazyčnými server-side překlade a bezproblémovou kompatibilitou napříč prohlížeči.",
+          "skills": ["Next.js", "React", "GraphQL", "TypeScript", "TailwindCSS"]
         },
         {
           "title":"Vývojář webových aplikací • eppTec",
           "dateSpan": "Září 2024 – Únor 2025",
-          "description": "Navrhoval a vyvíjel frontendová řešení pro bankovní procesy v České spořitelně.Pomocí TypeScriptu jsem převáděl komplexní požadavky do funkčních a škálovatelných systémů.",
+          "description": "Vytvářel frontendová řešení pro bankovní procesy v České spořitelně a převáděl složité požadavky do funkčních, škálovatelných a responzivních systémů.",
           "skills": ["TypeScript", "Analytické myšlení", "Bankovní procesy"]
         },
         {
           "title":"Frontend vývojář • ka.soft",
           "dateSpan": "Červen – Září 2024 • ka.soft",
           "description": "Vedl jsem návrh a vývoj zakázkových webových aplikací s důrazem na intuitivní UX/UI, responzivní frontend a bezproblémovou integraci s backendem. Řídil jsem celý vývojový cyklus a zajišťoval včasné dodání škálovatelných a přístupných řešení dle požadavků klientů.",
-          "skills": ["React.js", "TypeScript", "TailwindCSS", "Vite"]
+          "skills": ["React", "TypeScript", "TailwindCSS", "Vite"]
         }
       ],
       "link": {
