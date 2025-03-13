@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { Props } from "@/types";
 
 export type TExperienceProps = {
@@ -16,50 +16,24 @@ const ExperienceTab = ({
   description,
   skills,
 }: TExperienceProps) => {
-  const [mouseX, setMouseX] = useState(0);
-  const [mouseY, setMouseY] = useState(0);
-
-  const handleOnMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    const { currentTarget } = event;
-
-    setMouseX(
-      ((event.pageX - currentTarget.offsetLeft) / currentTarget.clientWidth) *
-        100,
-    );
-    setMouseY(
-      ((event.pageY - currentTarget.offsetTop) / currentTarget.clientHeight) *
-        100,
-    );
-  };
-
   return (
     <div
-      className={"experience-tab-border"}
-      onMouseMove={handleOnMouseMove}
-      style={
-        {
-          // background: `radial-gradient(1024px circle at ${mouseX}% ${mouseY}%, var(--accent-4), transparent`,
-        }
-      }
+      className={`experience-tab group overflow-hidden border border-transparent md:hover:border-accent-4`}
     >
-      <div
-        className={`experience-tab group overflow-hidden border border-transparent md:hover:border-accent-2`}
-      >
-        <div
-          className="bg-gradient hidden md:group-hover:block transition-colors"
-          style={{
-            background: `radial-gradient(512px circle at ${mouseX}% ${mouseY}%, var(--accent-2), transparent`,
-          }}
-        />
-        <h4 className={"uppercase z-10"}>{dateSpan}</h4>
-        <div className={"flex flex-col gap-y-2 z-10"}>
-          <h3 className={"font-light! text-accent-8!"}>{title}</h3>
-          <p className={"text-[14px]! tracking-wide!"}>{description}</p>
-          <div className={"flex gap-2 flex-wrap"}>
-            {skills.map((skill) => (
-              <Chip key={skill}>{skill}</Chip>
-            ))}
-          </div>
+      {/*<div*/}
+      {/*  className="bg-gradient hidden md:group-hover:block transition-colors"*/}
+      {/*  style={{*/}
+      {/*    background: `radial-gradient(512px circle at ${mouseX}% ${mouseY}%, var(--accent-2), transparent`,*/}
+      {/*  }}*/}
+      {/*/>*/}
+      <h4 className={"uppercase z-10"}>{dateSpan}</h4>
+      <div className={"flex flex-col gap-y-2 z-10"}>
+        <h3 className={"font-light! text-accent-8!"}>{title}</h3>
+        <p className={"text-[14px]! tracking-wide!"}>{description}</p>
+        <div className={"flex gap-2 flex-wrap"}>
+          {skills.map((skill) => (
+            <Chip key={skill}>{skill}</Chip>
+          ))}
         </div>
       </div>
     </div>
