@@ -9,7 +9,10 @@ import ThemeSwitch from "@/components/reusable/ThemeSwitch";
 const Aside = async () => {
   const t = await getTranslations("Aside");
   return (
-    <aside className={"vertical-padding md:min-w-96 w-full"}>
+    <aside
+      className={"vertical-padding md:min-w-96 w-full"}
+      suppressHydrationWarning
+    >
       <section
         className={"lg:fixed  flex flex-col h-min justify-between gap-y-12"}
       >

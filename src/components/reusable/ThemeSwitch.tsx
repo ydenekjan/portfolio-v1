@@ -8,12 +8,14 @@ const ThemeSwitch = () => {
   const { resolvedTheme, setTheme } = useTheme();
 
   return (
-    <DarkModeSwitch
-      checked={resolvedTheme === "dark"}
-      onChange={() =>
-        setTheme(() => (resolvedTheme === "light" ? "dark" : "light"))
-      }
-    />
+    !!resolvedTheme && (
+      <DarkModeSwitch
+        checked={resolvedTheme === "dark"}
+        onChange={() =>
+          setTheme(() => (resolvedTheme === "light" ? "dark" : "light"))
+        }
+      />
+    )
   );
 };
 

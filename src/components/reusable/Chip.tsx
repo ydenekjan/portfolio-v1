@@ -3,8 +3,8 @@ import { Props } from "@/types";
 
 const Chip = ({ children }: Props.Children) => {
   return (
-    <span className={"px-3 py-1 bg-accent-2 rounded-full"}>
-      <h4>{children}</h4>
+    <span className={"px-3 py-1 bg-primary/20 rounded-full"}>
+      <h4 className={"text-primary!"}>{children}</h4>
     </span>
   );
 };

@@ -175,20 +175,24 @@ p {
     scroll-behavior: smooth;
 
     /*colors*/
+    --primary: #038a7d;
     --accent-1: #fafafa;
     --accent-2: #eaeaea;
-    --accent-3: #999999;
-    --accent-4: #888888;
-    --accent-5: #666666;
-    --accent-6: #444444;
-    --accent-7: #333333;
-    --accent-8: #222222;
-    --accent-9: #111111;
+    --accent-3: #c2c2c2;
+    --accent-4: #999999;
+    --accent-5: #888888;
+    --accent-6: #666666;
+    --accent-7: #444444;
+    --accent-8: #333333;
+    --accent-9: #222222;
+    --accent-10: #111111;
 }
 
 :root[class~='dark'] {
-    --accent-9: #fafafa;
-    --accent-8: #eaeaea;
+    --primary: #07a899;
+    --accent-10: #fafafa;
+    --accent-9: #eaeaea;
+    --accent-8: #c2c2c2;
     --accent-7: #999999;
     --accent-6: #888888;
     --accent-5: #666666;
@@ -199,6 +203,7 @@ p {
 }
 
 @theme inline {
+    --color-primary: var(--primary);
     --color-accent-1: var(--accent-1);
     --color-accent-2: var(--accent-2);
     --color-accent-3: var(--accent-3);

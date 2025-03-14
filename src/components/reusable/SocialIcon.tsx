@@ -15,7 +15,7 @@ const SocialIcon = ({
       aria-label={label}
       title={title}
       className={
-        "w-7 h-7 transition-colors fill-accent-5 hover:fill-accent-7 relative object-cover overflow-hidden"
+        "w-7 h-7 transition-colors fill-accent-5 hover:fill-primary/50 relative object-cover overflow-hidden"
       }
       target="_blank"
       rel="noreferrer"
