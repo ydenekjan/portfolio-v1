@@ -1,7 +1,5 @@
-"use client";
-
 import React from "react";
-import { Props } from "@/types";
+import Chip from "@/components/reusable/Chip";
 
 export type TExperienceProps = {
   title: string;
@@ -17,38 +15,28 @@ const ExperienceTab = ({
   skills,
 }: TExperienceProps) => {
   return (
-    <div
-      className={`experience-tab group overflow-hidden border border-transparent md:hover:border-accent-4`}
-    >
-      {/*<div*/}
-      {/*  className="bg-gradient hidden md:group-hover:block transition-colors"*/}
-      {/*  style={{*/}
-      {/*    background: `radial-gradient(512px circle at ${mouseX}% ${mouseY}%, var(--accent-2), transparent`,*/}
-      {/*  }}*/}
-      {/*/>*/}
-      <h4 className={"uppercase z-10"}>{dateSpan}</h4>
-      <div className={"flex flex-col gap-y-2 z-10"}>
-        <h3 className={"font-light! text-accent-8!"}>{title}</h3>
-        <p className={"text-[14px]! tracking-wide!"}>{description}</p>
-        <div className={"flex gap-2 flex-wrap"}>
-          {skills.map((skill) => (
-            <Chip key={skill}>{skill}</Chip>
-          ))}
+    <div className={"relative"}>
+      <div
+        className={`absolute inset-0 -right-7 -left-7 experience-tab group overflow-hidden border border-transparent md:hover:border-accent-4`}
+      >
+        {/*<div*/}
+        {/*  className="bg-gradient hidden md:group-hover:block transition-colors"*/}
+        {/*  style={{*/}
+        {/*    background: `radial-gradient(512px circle at ${mouseX}% ${mouseY}%, var(--accent-2), transparent`,*/}
+        {/*  }}*/}
+        {/*/>*/}
+        <h4 className={"uppercase z-10"}>{dateSpan}</h4>
+        <div className={"flex flex-col gap-y-2 z-10"}>
+          <h3 className={"font-light! text-accent-8!"}>{title}</h3>
+          <p className={"text-[14px]! tracking-wide!"}>{description}</p>
+          <div className={"flex gap-2 flex-wrap"}>
+            {skills.map((skill) => (
+              <Chip key={skill}>{skill}</Chip>
+            ))}
+          </div>
         </div>
       </div>
     </div>
-  );
-};
-
-const Chip = ({ children }: Props.Children) => {
-  return (
-    <span
-      className={
-        "px-3 py-1 md:group-hover:bg-accent-5/20 bg-accent-2 rounded-full transition-colors"
-      }
-    >
-      <h4>{children}</h4>
-    </span>
   );
 };
 

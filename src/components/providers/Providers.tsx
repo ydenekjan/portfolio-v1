@@ -10,7 +10,7 @@ const Providers = ({ children }: Props.Children) => {
     <NavContextProvider>
       <ThemeProvider
         attribute={"class"}
-        defaultTheme={"dark"}
+        defaultTheme={"system"}
         enableSystem={true}
       >
         {children}

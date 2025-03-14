@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import Socials from "@/components/core/Socials";
 import TypewriterInfo from "@/components/core/TypewriterInfo";
 import LangSwitch from "@/components/reusable/LangSwitch";
+import ThemeSwitch from "@/components/reusable/ThemeSwitch";
 
 const Aside = async () => {
   const t = await getTranslations("Aside");
@@ -16,8 +17,11 @@ const Aside = async () => {
           <h1>{t("name")}</h1>
           <h2>{t("position")}</h2>
           <TypewriterInfo />
-          <Socials />
-          <LangSwitch />
+          <div className="flex gap-x-4 md:gap-x-8 items-center relative mt-2">
+            <Socials />
+            <ThemeSwitch />
+            <LangSwitch />
+          </div>
         </header>
 
         <Navbar />
