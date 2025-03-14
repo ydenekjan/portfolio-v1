@@ -33,7 +33,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html className={"dark"} lang={locale} suppressHydrationWarning>
       <SpeedInsights />
       <body className={"flex flex-col items-center"}>
         <NextIntlClientProvider messages={messages}>

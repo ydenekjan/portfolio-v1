@@ -8,7 +8,7 @@ import SocialIcon from "@/components/reusable/SocialIcon";
 
 const Socials = () => {
   return (
-    <div className={"flex gap-3 mt-2"}>
+    <div className={"flex gap-3"}>
       <SocialIcon
         href={"https://github.com/ydenekjan"}
         title={"Github"}

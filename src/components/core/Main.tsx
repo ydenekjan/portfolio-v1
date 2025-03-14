@@ -49,7 +49,11 @@ const Main = () => {
           })}
         </p>
       </Section>
-      <Section ref={experienceRef} id={t("Experience.href")}>
+      <Section
+        ref={experienceRef}
+        id={t("Experience.href")}
+        className={"group"}
+      >
         <Section.Title>
           {t("Experience.title")}
           <a

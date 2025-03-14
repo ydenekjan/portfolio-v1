@@ -1,7 +1,5 @@
-"use client";
-
-import React, { useState } from "react";
-import { Props } from "@/types";
+import React from "react";
+import Chip from "@/components/reusable/Chip";
 
 export type TExperienceProps = {
   title: string;
@@ -16,41 +14,13 @@ const ExperienceTab = ({
   description,
   skills,
 }: TExperienceProps) => {
-  const [mouseX, setMouseX] = useState(0);
-  const [mouseY, setMouseY] = useState(0);
-
-  const handleOnMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    const { currentTarget } = event;
-
-    setMouseX(
-      ((event.pageX - currentTarget.offsetLeft) / currentTarget.clientWidth) *
-        100,
-    );
-    setMouseY(
-      ((event.pageY - currentTarget.offsetTop) / currentTarget.clientHeight) *
-        100,
-    );
-  };
-
   return (
     <div
-      className={"experience-tab-border"}
-      onMouseMove={handleOnMouseMove}
-      style={
-        {
-          // background: `radial-gradient(1024px circle at ${mouseX}% ${mouseY}%, var(--accent-4), transparent`,
-        }
+      className={
+        "relative transition-all group-has-[:hover]:opacity-60 rounded-lg hover:opacity-100"
       }
     >
-      <div
-        className={`experience-tab group overflow-hidden border border-transparent md:hover:border-accent-2`}
-      >
-        <div
-          className="bg-gradient hidden md:group-hover:block transition-colors"
-          style={{
-            background: `radial-gradient(512px circle at ${mouseX}% ${mouseY}%, var(--accent-2), transparent`,
-          }}
-        />
+      <div className={`absolute experience-tab overflow-hidden`}>
         <h4 className={"uppercase z-10"}>{dateSpan}</h4>
         <div className={"flex flex-col gap-y-2 z-10"}>
           <h3 className={"font-light! text-accent-8!"}>{title}</h3>
@@ -63,18 +33,6 @@ const ExperienceTab = ({
         </div>
       </div>
     </div>
-  );
-};
-
-const Chip = ({ children }: Props.Children) => {
-  return (
-    <span
-      className={
-        "px-3 py-1 md:group-hover:bg-accent-5/20 bg-accent-2 rounded-full transition-colors"
-      }
-    >
-      <h4>{children}</h4>
-    </span>
   );
 };
 
