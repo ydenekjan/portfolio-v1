@@ -17,7 +17,7 @@ const ExperienceTab = ({
   return (
     <div
       className={
-        "relative transition-all group-has-[:hover]:opacity-60 rounded-lg hover:opacity-100"
+        "relative transition-all md:group-has-[:hover]:opacity-60 rounded-lg md:hover:opacity-100"
       }
     >
       <div className={`absolute experience-tab overflow-hidden`}>
