@@ -24,7 +24,7 @@ const Socials = () => {
         <LinkedinIcon />
       </SocialIcon>
       <SocialIcon
-        href={"https://steamcommunity.com/id/swiftyy_"}
+        href={"https://steamcommunity.com/id/itz_raevynn"}
         title={"Steam"}
         label={"Steam (Opens in a new tab)"}
       >

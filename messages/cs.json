@@ -1,17 +1,17 @@
 {
   "Metadata": {
     "title": "Jan Zdeněk",
-    "description": "Ambiciózní frontendový vývojář s citem pro detail, silnými analytickými schopnostmi a zkušenostmi s vedením týmu."
+    "description": "Ambiciózní softwarový inženýr s citem pro detail, silnými analytickými schopnostmi a zkušenostmi s full stack vývojem."
   },
   "Aside": {
     "name": "Jan Zdeněk",
-    "position": "Frontend vývojář",
+    "position": "Softwarový inženýr",
     "quote": "Vytvářím přístupná, na pixel přesná frontendová řešení pro web a webové aplikace."
   },
   "Main": {
     "About": {
       "title": "O mně",
-      "content": "Jsem ambiciózní frontendový vývojář s citem pro detail, silnými analytickými schopnostmi a zkušenostmi s vedením týmu. Jsem kariérně orientovaný a zaměřený na výsledky, vždy usiluji o to, aby moje práce měla skutečný dopad a byla široce využívána.<br></br>Během své kariéry jsem měl možnost vyvíjet software v různých prostředích – od společností specializujících se na vývoj webových aplikací na míru až po velké korporace využívající proprietární frameworky.<br></br>Kromě práce je pro mě klíčové také vzdělání. Jako student Unicorn University jsem úspěšně absolvoval předměty jako Architektura cloudových aplikací, Frontendové a backendové systémy či Matematická analýza a diskrétní matematika.<br></br>Ve volném čase se věnuji rozvoji svých frontendových a backendových dovedností, hudbě a hraní videoher.",
+      "content": "Jsem ambiciózní softwarový inženýr s citem pro detail, silnými analytickými schopnostmi a zkušenostmi s full stack vývojem. Jsem kariérně orientovaný a zaměřený na výsledky, vždy usiluji o to, aby moje práce měla skutečný dopad a byla široce využívána.<br></br>Během své kariéry jsem měl možnost vyvíjet software v různých prostředích - od společností specializujících se na vývoj webových aplikací na míru až po velké korporace využívající proprietární frameworky.<br></br>Kromě práce je pro mě klíčové také vzdělání. Jako student Unicorn University jsem úspěšně absolvoval předměty jako Architektura cloudových aplikací, Frontendové a backendové systémy či Matematická analýza a diskrétní matematika.<br></br>Ve volném čase se věnuji rozvoji svých frontendových a backendových dovedností, hudbě a hraní videoher.",
       "href": "o-mne"
     },
     "Experience": {
@@ -19,10 +19,10 @@
       "href": "zkusenosti",
       "tabs": [
         {
-          "title":"Frontend vývojář • Yolk Studio",
-          "dateSpan": "Únor 2025 – Současnost",
-          "description": "Vytvářel responzivní weby s úchvatnými 3D animacemi, vícejazyčnými server-side překlade a bezproblémovou kompatibilitou napříč prohlížeči.",
-          "skills": ["Next.js", "React", "GraphQL", "TypeScript", "TailwindCSS"]
+          "title": "Softwarový inženýr • Brighten Digital",
+          "dateSpan": "Červen 2025 – Současnost",
+          "description": "Vývoj a údržba komplexních full stack webových aplikací v Next.js a TypeScriptu. Práce s config-driven UI systémy, Azure cloudovými službami a MongoDB datovými modely, úzká spolupráce s backendovými týmy na API integracích.",
+          "skills": ["TypeScript", "React", "Azure", "TanStack Query", "Zustand", "Vite"]
         },
         {
           "title":"Vývojář webových aplikací • eppTec",
@@ -32,7 +32,7 @@
         },
         {
           "title":"Frontend vývojář • ka.soft",
-          "dateSpan": "Červen – Září 2024 • ka.soft",
+          "dateSpan": "Červen – Září 2024",
           "description": "Vedl jsem návrh a vývoj zakázkových webových aplikací s důrazem na intuitivní UX/UI, responzivní frontend a bezproblémovou integraci s backendem. Řídil jsem celý vývojový cyklus a zajišťoval včasné dodání škálovatelných a přístupných řešení dle požadavků klientů.",
           "skills": ["React", "TypeScript", "TailwindCSS", "Vite"]
         }
