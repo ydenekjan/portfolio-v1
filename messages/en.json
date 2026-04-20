@@ -1,17 +1,17 @@
 {
   "Metadata": {
     "title": "Jan Zdenek",
-    "description": "An ambitious frontend developer with a keen eye for detail, strong analytical skills, and experience leading teams."
+    "description": "An ambitious software engineer with a keen eye for detail, strong analytical skills, and experience in full stack development."
   },
   "Aside": {
     "name": "Jan Zdenek",
-    "position": "Front-end Developer",
+    "position": "Software Engineer",
     "quote": "I create accessible, pixel-accurate frontend solutions for web and web applications."
   },
   "Main": {
     "About": {
       "title": "About me",
-      "content": "I am an ambitious frontend developer with a keen eye for detail, strong analytical skills, and experience leading teams. I am career-driven and results-oriented, always striving to ensure my work has a real impact and is widely utilized.<br></br>Throughout my career, I have had the opportunity to develop software in various environments—from companies specializing in custom web applications to large corporations utilizing proprietary frameworks.<br></br>Beyond work, education is a key part of my life. As a student at Unicorn University, I have successfully completed courses such as Cloud Application Architecture, Frontend and Backend Systems, and Mathematical Analysis & Discrete Mathematics.<br></br>In my free time, I focus on improving my frontend and backend skills, making music, and playing video games.",
+      "content": "I am an ambitious software engineer with a keen eye for detail, strong analytical skills, and experience in full stack development. I am career-driven and results-oriented, always striving to ensure my work has a real impact and is widely utilized.<br></br>Throughout my career, I have had the opportunity to develop software in various environments - from companies specializing in custom web applications to large corporations utilizing proprietary frameworks.<br></br>Beyond work, education is a key part of my life. As a student at Unicorn University, I have successfully completed courses such as Cloud Application Architecture, Frontend and Backend Systems, and Mathematical Analysis & Discrete Mathematics.<br></br>In my free time, I focus on improving my frontend and backend skills, making music, and playing video games.",
       "href": "about-me"
     },
     "Experience": {
@@ -19,10 +19,10 @@
       "href": "experience",
       "tabs": [
         {
-          "title":"Front-end Developer • Yolk Studio",
-          "dateSpan": "February 2025 – Present",
-          "description": "Built responsive websites featuring engaging 3D animations, multilingual server-side translations, and seamless cross-browser compatibility.",
-          "skills": ["Next.js", "React", "GraphQL", "TypeScript", "TailwindCSS"]
+          "title": "Software Engineer • Brighten Digital",
+          "dateSpan": "June 2025 – Present",
+          "description": "Developing and maintaining complex full stack web applications using Next.js and TypeScript. Working with config-driven UI systems, Azure cloud services, and MongoDB data models, collaborating closely with backend teams on API integrations.",
+          "skills": ["TypeScript", "React", "Azure", "TanStack Query", "Zustand", "Vite"]
         },
         {
           "title":"Web-app developer • eppTec",
@@ -39,7 +39,7 @@
       ],
       "link": {
         "title": "Get my full Résumé",
-        "href": "/janZdenek_CV.pdf"
+        "href": "/jan-zdenek_cv.pdf"
       }
     },
     "Projects": {

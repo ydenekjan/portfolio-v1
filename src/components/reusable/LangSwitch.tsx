@@ -69,10 +69,14 @@ const LangSwitch = () => {
         tabIndex={-1}
       >
         {locales
-          .sort(() => (currentLocale === "cs" ? 1 : -1))
+          .sort((a, b) => {
+            if (a === currentLocale) return -1;
+            if (b === currentLocale) return 1;
+            return 0;
+          })
           .map((locale, idx) => (
             <Link
-              aria-disabled={locale === currentLocale}
+              aria-disabled={locale === currentLocale ? "true" : "false"}
               tabIndex={locale === currentLocale ? -1 : undefined}
               className={`w-full inline-flex hover:bg-accent-2 transition-colors items-center gap-x-[9px] pl-3 py-2 text-sm text-accent-9 ${locale === currentLocale ? "pointer-events-none" : ""}`}
               key={locale}
